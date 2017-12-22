@@ -6,7 +6,7 @@
 
 int main(int argc, const char * argv[])
 {
-    printf("Please input size of first matrix\n");
+    printf("Please input size of first matrix\n");  /* Enter the required values for the first matrix*/
     int m=0,n=0,e=0;
     srand(time(NULL));
     scanf("%d %d",&m,&n);
@@ -23,7 +23,7 @@ int main(int argc, const char * argv[])
     
     
     
-    int matr1[m][n];
+    int matr1[m][n];            /*input first matrix random values*/
     
     int i = 0;
     int j = 0;
@@ -35,7 +35,7 @@ int main(int argc, const char * argv[])
             matr1[i][j] = rand() % 9;
         }
     }
-    for(i=0;i<m;++i)
+    for(i=0;i<m;++i)            /*output first matrix*/
     {
         for(j=0;j<n;++j)
         {
@@ -46,7 +46,7 @@ int main(int argc, const char * argv[])
     }
     printf("\n");
     
-    for(i=0;i<n;++i)
+    for(i=0;i<n;++i)       /*create new matrix and the breaching of the necessary actions over the matrix*/
     {
         int a = 0;
         a = matr1[0][i];
@@ -84,7 +84,7 @@ int main(int argc, const char * argv[])
     }
     printf("\n");
 
-    printf("*** Deployed matrix ***\n\n");
+    printf("*** Deployed matrix ***\n\n");          /*Deploying matrix*/
     for(i=0;i<m;++i)
     {
         for(j=0;j<n;++j)
@@ -94,7 +94,7 @@ int main(int argc, const char * argv[])
                 printf("\n");
         }
     }
-    int min = 10;
+    int min = 10;               /*search min value in matrix*/
     
     int m1 = 0, n1 = 0;
     for(i=0;i<m;++i)
@@ -141,7 +141,7 @@ int main(int argc, const char * argv[])
                 printf("\n");
         }
     }
-    int g,h;
+    int g,h;            /*creating new matrix and filling personal numbers*/
     printf("\n");
     printf("Please input size of second matrix\n");
     scanf("%d %d",&g,&h);
@@ -238,7 +238,7 @@ int main(int argc, const char * argv[])
     else
     {
     
-    printf("*** Multiplied matrix ***\n");
+    printf("*** Multiplied matrix ***\n");          /* Multiplied matrix and output finish result*/
         for(i = 0; i < m-1; i++)
             for(j = 0; j < en; j++)
             {
